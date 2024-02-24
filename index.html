@@ -4,63 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Программирование на HTML и CSS</title>
+    <title>HTML and CSS Programming</title>
     <style>
-        /* Add your custom styles here if needed */
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+        body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            /* Add more styles as needed */
+        }
+
+        #header {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #nav {
+            float: left;
+            width: 20%;
+            background: #f2f2f2;
+            padding: 20px;
+            height: 100vh;
+            overflow: auto;
+        }
+
+        #content {
+            float: left;
+            width: 60%;
+            padding: 20px;
+            height: 100vh;
+            overflow: auto;
+        }
+
+        #footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+            clear: both;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <div id="header">
+        <h1>HTML and CSS Programming</h1>
+    </div>
 
-        <h1>Программирование на HTML и CSS</h1>
-
-        <h2>HTML (HyperText Markup Language)</h2>
-        <p>HTML - это язык разметки, который используется для создания структуры веб-страниц. Он состоит из различных тегов, каждый из которых выполняет определенную функцию. HTML определяет заголовки, абзацы, изображения, ссылки и многое другое.</p>
-
-        <h2>CSS (Cascading Style Sheets)</h2>
-        <p>CSS - это язык стилей, который определяет внешний вид и оформление веб-страницы. С помощью CSS можно управлять цветами, шрифтами, отступами, рамками и другими стилями элементов HTML. Он позволяет создавать красивые и структурированные дизайны.</p>
-
-        <h2>Теги HTML</h2>
+    <div id="nav">
+        <h2>Navigation</h2>
         <ul>
-            <li><code>&lt;html&gt;</code>: Определяет начало и конец HTML-документа.</li>
-            <!-- Add the rest of your HTML tags here -->
-        </ul>
-
-        <h2>Свойства CSS</h2>
-        <ul>
-            <li><code>color</code>: Задает цвет текста.</li>
-            <!-- Add the rest of your CSS properties here -->
-        </ul>
-
-        <h1>Селекторы CSS</h1>
-
-        <p>Селекторы CSS - это шаблоны, используемые для выбора и стилизации элементов HTML. Вот краткий обзор:</p>
-
-        <ul>
-            <li><code>*</code>: Универсальный селектор - Выбирает все элементы на странице.</li>
-            <!-- Add the rest of your CSS selectors here -->
-        </ul>
-
-        <p>Эти селекторы могут быть объединены и использованы для применения стилей к конкретным элементам или группам элементов на веб-странице.</p>
-
-        <h2>История HTML и CSS</h2>
-        <p><strong>HTML:</strong> HTML был разработан Тимом Бернерсом-Ли в 1991 году. Первая версия HTML была представлена в 1993 году. С течением времени HTML прошел через несколько версий, каждая из которых добавляла новые возможности и улучшения.</p>
-        <!-- Add the rest of your HTML and CSS history content here -->
-
-        <h2>Интересные факты</h2>
-        <ul>
-            <li>Первый веб-сайт был создан Тимом Бернерсом-Ли в 1991 году. Он был посвящен World Wide Web Project и описывал, что такое WWW.</li>
-            <!-- Add the rest of your interesting facts here -->
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#tags">HTML Tags</a></li>
+            <li><a href="#properties">CSS Properties</a></li>
+            <li><a href="#selectors">CSS Selectors</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#facts">Interesting Facts</a></li>
         </ul>
     </div>
+
+    <div id="content">
+        <h2 id="html">HTML (HyperText Markup Language)</h2>
+        <p>HTML - это язык разметки, который используется для создания структуры веб-страниц...</p>
+
+        <!-- Add the rest of your content here -->
+
+    </div>
+
+    <div id="footer">
+        <p>© 2024 HTML and CSS Programming</p>
+    </div>
+
 </body>
 
 </html>
